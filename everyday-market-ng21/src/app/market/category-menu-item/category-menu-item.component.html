@@ -1,7 +1,12 @@
-<div class="category-card" (click)="onItemClick()">
+<div class="category-card" 
+     (click)="onItemClick()" 
+     (keyup.enter)="onItemClick()"
+     (keyup.space)="onItemClick()"
+     tabindex="0"
+     role="button">
   <div class="category-icon">📦</div>
   <h3 class="category-name">{{ categoryName }}</h3>
-  @if(categoryPrice) {
+  @if (categoryPrice) {
     <p class="category-price">${{ categoryPrice }}</p>
   }
   <p class="category-action">Click to explore →</p>
