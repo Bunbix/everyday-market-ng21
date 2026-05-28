@@ -1,0 +1,9 @@
+<div class="products-container">
+  <div class="hero-section">
+    <h1>Welcome to Everyday Market</h1>
+    <p>Discover quality products at great prices</p>
+  </div>
+  
+  <app-category-menu [categories]="categoryList" (categorySelected)="onCategorySelected($event)">
+  </app-category-menu>
+</div>

@@ -1,0 +1,26 @@
+.main-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  max-height: 150px;
+  object-fit: cover;
+}

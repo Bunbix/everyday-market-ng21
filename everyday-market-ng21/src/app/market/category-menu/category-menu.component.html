@@ -1,0 +1,11 @@
+<div class="categories-container">
+  <h2 class="section-title">Shop by Category</h2>
+  <div class="categories-grid">
+    <app-category-menu-item
+      *ngFor="let category of categories"
+      [categoryName]="category.name"
+      [categoryPrice]="category.price"
+      (itemClicked)="onItemClicked(category)">
+    </app-category-menu-item>
+  </div>
+</div>
